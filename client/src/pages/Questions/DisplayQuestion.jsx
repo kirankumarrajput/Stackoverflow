@@ -1,18 +1,18 @@
 import React from "react";
 import LeftSideBar from "../../componets/LeftSideBar/LeftSideBar";
-import HomeMainBar from "../../componets/HomeMainBar/HomeMainBar";
 import RightSideBar from "../../componets/RightSideBar/RightSideBar";
-import "../../App.css";
+import QuestionsDetails from "./QuestionsDetails";
 
-const Home = () => {
+const DisplayQuestion = () => {
   return (
     <div className="home-container-1">
       <LeftSideBar />
       <div className="home-container-2">
-        <HomeMainBar />
+        <QuestionsDetails />
         <RightSideBar />
       </div>
     </div>
   );
 };
-export default Home;
+
+export default DisplayQuestion;

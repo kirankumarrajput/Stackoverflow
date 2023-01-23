@@ -27,7 +27,6 @@ const NavBar = () => {
           <img src={search} alt="search.." width="18" className="search-icon" />
         </form>
 
-
         {user === null ? (
           <Link to="/Auth" className="nav-item nav-links">
             Log in
@@ -40,19 +39,17 @@ const NavBar = () => {
               py="7px"
               borderRadius="50%"
               cursor="pointer"
-              
             >
               <Link
-                to="./user"
+                to="/user"
                 style={{ color: "white", textDecoration: "none" }}
-              >M</Link>
+              >
+                M
+              </Link>
             </Avatar>
-            
-            <Link  className="nav-item nav-links">Log out</Link>
+            <Link className="nav-item nav-links">Log out</Link>
           </>
         )}
-
-
       </div>
     </nav>
   );
